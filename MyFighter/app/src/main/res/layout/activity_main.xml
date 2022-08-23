@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_filter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:text="Filter:"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_header" />
+
+    <Spinner
+        android:id="@+id/sp_division_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintLeft_toRightOf="@id/tv_filter_text"
+        app:layout_constraintTop_toTopOf="@id/tv_filter_text" />
+
+    <Spinner
+        android:id="@+id/sp_nationality_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintLeft_toRightOf="@id/sp_division_filter"
+        app:layout_constraintTop_toTopOf="@id/tv_filter_text" />
+
+    <Spinner
+        android:id="@+id/sp_fighting_style_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="25dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintLeft_toRightOf="@id/sp_nationality_filter"
+        app:layout_constraintTop_toTopOf="@id/tv_filter_text" />
+
+    <TextView
+        android:id="@+id/tv_division_filter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/sp_division_filter"
+        app:layout_constraintLeft_toLeftOf="@id/sp_division_filter"
+        app:layout_constraintRight_toRightOf="@id/sp_division_filter" />
+
+    <TextView
+        android:id="@+id/tv_nationality_filter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationality"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/sp_nationality_filter"
+        app:layout_constraintLeft_toLeftOf="@id/sp_nationality_filter"
+        app:layout_constraintRight_toRightOf="@id/sp_nationality_filter" />
+
+    <TextView
+        android:id="@+id/tv_fighting_style_filter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fighting Style"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@id/sp_fighting_style_filter"
+        app:layout_constraintLeft_toLeftOf="@id/sp_fighting_style_filter"
+        app:layout_constraintRight_toRightOf="@id/sp_fighting_style_filter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sp_division_filter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
