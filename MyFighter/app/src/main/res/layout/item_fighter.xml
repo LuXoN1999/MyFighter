@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:backgroundTint="#B33865a1"
+    android:background="@drawable/corners"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp">
+    <ImageView
+        android:id="@+id/iv_fighter_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/corners"
+        android:backgroundTint="@color/white"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/iv_fighter_image"
+        app:layout_constraintTop_toTopOf="@id/iv_fighter_image"
+        android:layout_marginStart="15dp"
+        android:textSize="20sp"
+        android:text="fighter_name"
+        android:textFontWeight="1000"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:textSize="15sp"
+        android:text="fighter_nickname"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/iv_fighter_image"
+        app:layout_constraintLeft_toLeftOf="@id/tv_nickname"
+        android:textSize="15sp"
+        android:text="fighter_status"
+        />
+
+    <TextView
+        android:id="@+id/tv_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="DIV"
+        android:textColor="@color/white"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

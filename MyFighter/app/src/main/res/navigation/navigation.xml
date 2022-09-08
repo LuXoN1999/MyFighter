@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fighterListFragment">
+
+
+    <fragment
+        android:id="@+id/fighterListFragment"
+        android:name="com.example.myfighter.ui.fighter_list.FighterListFragment"
+        android:label="FighterListFragment" >
+        <action
+            android:id="@+id/action_fighterListFragment_to_newFighterFragment"
+            app:destination="@id/newFighterFragment" />
+        <action
+            android:id="@+id/action_fighterListFragment_to_fighterDetailsFragment"
+            app:destination="@id/fighterDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newFighterFragment"
+        android:name="com.example.myfighter.ui.new_fighter.NewFighterFragment"
+        android:label="NewFighterFragment" >
+        <action
+            android:id="@+id/action_newFighterFragment_to_fighterListFragment"
+            app:destination="@id/fighterListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fighterDetailsFragment"
+        android:name="com.example.myfighter.ui.fighter_details.FighterDetailsFragment"
+        android:label="FighterDetailsFragment" >
+        <action
+            android:id="@+id/action_fighterDetailsFragment_to_fighterListFragment"
+            app:destination="@id/fighterListFragment" />
+        <argument
+            android:name="fighterName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
