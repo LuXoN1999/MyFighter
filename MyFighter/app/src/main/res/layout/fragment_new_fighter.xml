@@ -14,6 +14,8 @@
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:text="@string/str_name"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -29,6 +31,8 @@
         android:inputType="text"
         android:hint="Enter name"
         android:gravity="center"
+        android:textColor="#B33865A1"
+        android:backgroundTint="#B33865A1"
         />
 
     <TextView
@@ -41,6 +45,8 @@
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:text="@string/str_nickname"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -56,6 +62,8 @@
         android:importantForAutofill="no"
         android:hint="Enter nickname"
         android:gravity="center"
+        android:textColor="#B33865A1"
+        android:backgroundTint="#B33865A1"
         />
 
     <TextView
@@ -68,6 +76,8 @@
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:text="@string/str_nationality"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -83,6 +93,8 @@
         android:inputType="text"
         android:hint="Enter nationality"
         android:gravity="center"
+        android:textColor="#B33865A1"
+        android:backgroundTint="#B33865A1"
         />
 
     <TextView
@@ -95,6 +107,8 @@
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:text="@string/str_age"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -110,6 +124,8 @@
         android:inputType="number"
         android:hint="Enter age"
         android:gravity="center"
+        android:textColor="#B33865A1"
+        android:backgroundTint="#B33865A1"
         />
 
     <TextView
@@ -122,6 +138,8 @@
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:text="IMAGE URL"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -137,6 +155,8 @@
         android:importantForAutofill="no"
         android:hint="Enter image URL"
         android:gravity="center"
+        android:textColor="#B33865A1"
+        android:backgroundTint="#B33865A1"
         />
 
     <TextView
@@ -149,6 +169,8 @@
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:text="@string/str_status"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <RadioGroup
@@ -164,6 +186,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:textColor="#B33865A1"
+            android:buttonTint="#B33865A1"
             android:text="@string/str_status_active" />
 
         <RadioButton
@@ -171,6 +195,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
+            android:textColor="#B33865A1"
+            android:buttonTint="#B33865A1"
             android:text="@string/str_status_retired" />
     </RadioGroup>
 
@@ -184,7 +210,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="150dp"
         android:textSize="15sp"
+        android:textColor="#B33865A1"
         android:text="@string/str_weight"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -198,6 +226,8 @@
         android:layout_marginStart="150dp"
         android:textSize="15sp"
         android:text="@string/str_height"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <EditText
@@ -211,7 +241,9 @@
         android:inputType="numberDecimal"
         android:importantForAutofill="no"
         android:hint="Enter weight"
+        android:textColor="#B33865A1"
         android:gravity="center"
+        android:backgroundTint="#B33865A1"
         />
 
     <EditText
@@ -225,7 +257,9 @@
         android:inputType="numberDecimal"
         android:importantForAutofill="no"
         android:hint="Enter height"
+        android:textColor="#B33865A1"
         android:gravity="center"
+        android:backgroundTint="#B33865A1"
         />
     <TextView
         android:id="@+id/tv_fighting_style"
@@ -237,6 +271,8 @@
         android:layout_margin="10dp"
         android:textSize="15sp"
         android:text="@string/str_style"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
 
@@ -253,21 +289,29 @@
             android:id="@+id/rb_style_mma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#B33865A1"
+            android:buttonTint="#B33865A1"
             android:text="@string/str_style_mma"/>
         <RadioButton
             android:id="@+id/rb_style_kickboxing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#B33865A1"
+            android:buttonTint="#B33865A1"
             android:text="@string/str_style_kickboxer" />
         <RadioButton
             android:id="@+id/rb_style_wrestler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#B33865A1"
+            android:buttonTint="#B33865A1"
             android:text="@string/str_style_wrestler"/>
         <RadioButton
             android:id="@+id/rb_style_grappler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#B33865A1"
+            android:buttonTint="#B33865A1"
             android:text="@string/str_style_grappler"/>
     </RadioGroup>
 
@@ -280,6 +324,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_margin="20dp"
         android:text="@string/str_create_fighter"
+        android:textColor="#B33865A1"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

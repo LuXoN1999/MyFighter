@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -23,7 +22,9 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
+        android:textColor="#B33865A1"
         android:text="NAME:"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -36,6 +37,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:text="NICKNAME:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -48,6 +51,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:text="NATIONALITY:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -60,6 +65,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:text="AGE:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -72,6 +79,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:text="STATUS:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -83,7 +92,9 @@
         android:layout_marginTop="75dp"
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
-       android:text="DIVISION:"
+        android:text="DIVISION:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -96,6 +107,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:text="WEIGHT:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -108,6 +121,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:text="HEIGHT:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -120,6 +135,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:text="FIGHTING STYLE:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -132,6 +149,8 @@
         android:layout_marginLeft="15dp"
         android:textSize="15sp"
         android:text="BMI:"
+        android:textColor="#B33865A1"
+        android:textStyle="bold"
         />
 
     <Button
@@ -142,6 +161,7 @@
         app:layout_constraintTop_toTopOf="@id/tv_details_division_label"
         android:layout_marginRight="15dp"
         android:text="kg/lbs"
+        android:textColor="#B33865A1"
         />
 
     <Button
@@ -153,6 +173,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
         android:text="cm/ft"
+        android:textColor="#B33865A1"
         />
 
     <Button
@@ -163,6 +184,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="25dp"
         android:text="BACK"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -173,6 +195,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_name_label"
         android:layout_marginLeft="5dp"
         android:text="name_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -183,6 +206,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_nickname_label"
         android:layout_marginLeft="5dp"
         android:text="nickname_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -193,6 +217,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_nationality_label"
         android:layout_marginLeft="5dp"
         android:text="nationality_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -203,6 +228,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_age_label"
         android:layout_marginLeft="5dp"
         android:text="age_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -213,6 +239,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_status_label"
         android:layout_marginLeft="5dp"
         android:text="status_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -223,6 +250,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_division_label"
         android:layout_marginLeft="5dp"
         android:text="division_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -233,6 +261,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_weight_label"
         android:layout_marginLeft="5dp"
         android:text="weight_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -243,6 +272,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_height_label"
         android:layout_marginLeft="5dp"
         android:text="height_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -253,6 +283,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_style_label"
         android:layout_marginLeft="5dp"
         android:text="style_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -263,6 +294,7 @@
         app:layout_constraintBottom_toBottomOf="@id/tv_details_bmi_label"
         android:layout_marginLeft="5dp"
         android:text="bmi_value"
+        android:textColor="#B33865A1"
         />
 
     <TextView
@@ -284,6 +316,7 @@
         app:layout_constraintBottom_toBottomOf="@id/btn_details_back"
         android:layout_marginLeft="20dp"
         android:text="DELETE"
+        android:textColor="#B33865A1"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

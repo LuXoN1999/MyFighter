@@ -77,19 +77,19 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/white"
-        android:background="#B33865a1"
+        android:background="#B33865A1"
         />
 
 
-  <androidx.recyclerview.widget.RecyclerView
-      android:id="@+id/rv_fighters"
-      android:layout_height="0dp"
-      android:layout_width="match_parent"
-      app:layout_constraintTop_toTopOf="@id/tv_header"
-      android:layout_marginTop="150dp"
-      android:layout_marginHorizontal="8dp"
-      app:layout_constraintBottom_toBottomOf="parent"
-      />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_fighters"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="@id/tv_header"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_add_fighter"
@@ -97,9 +97,12 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:elevation="0dp"
         app:tint="@android:color/white"
+        android:backgroundTint="#B33865A1"
         android:layout_margin="25dp"
         android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#B33865A1"
         app:fabSize="normal"
         />
 

@@ -15,8 +15,4 @@ class FighterRepositoryImpl(val fighterDAO: FighterDAO): FighterRepository {
         fighterDAO.getFightersByRetirementStatus(isRetired)
 
     override fun getFightersByDivision(division: String): LiveData<List<Fighter>> = fighterDAO.getFightersByDivision(division)
-   /* override fun getFightersByDivisionAndRetirementStatus(
-        division: String,
-        isRetired: Boolean
-    ): LiveData<List<Fighter>> = fighterDAO.getFightersByDivisionAndRetirementStatus(division,isRetired) */
 }

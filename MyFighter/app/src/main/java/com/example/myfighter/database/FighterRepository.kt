@@ -11,5 +11,4 @@ interface FighterRepository {
     fun getFightersByFightingStyle(fightingStyle: String): LiveData<List<Fighter>>
     fun getFightersByRetirementStatus(isRetired: Boolean): LiveData<List<Fighter>>
     fun getFightersByDivision(division: String): LiveData<List<Fighter>>
-   /* fun getFightersByDivisionAndRetirementStatus(division: String, isRetired: Boolean): LiveData<List<Fighter>> */
 }
