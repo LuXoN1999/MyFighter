@@ -1,3 +1,45 @@
 <resources>
     <string name="app_name">MyFighter</string>
+    <string name="str_age">AGE</string>
+    <string name="str_name">NAME</string>
+    <string name="str_nickname">NICKNAME</string>
+    <string name="str_nationality">NATIONALITY</string>
+    <string name="str_status">STATUS</string>
+    <string name="str_status_retired">RETIRED</string>
+    <string name="str_status_active">ACTIVE</string>
+    <string name="str_weight">WEIGHT(Kg)</string>
+    <string name="str_division">DIVISION</string>
+    <string name="str_height">HEIGHT(Cm)</string>
+    <string name="str_style">FIGHTING STYLE</string>
+    <string name="str_style_mma">MMA</string>
+    <string name="str_style_wrestler">Wrestler</string>
+    <string name="str_style_kickboxer">Kickboxer</string>
+    <string name="str_style_grappler">Grappler</string>
+    <string name="str_create_fighter">Create Fighter</string>
+    <string name="str_bmi">BMI</string>
+    <string-array name="division_array">
+        <item>All</item>
+        <item>Flyweight</item>
+        <item>Bantamweight</item>
+        <item>Featherweight</item>
+        <item>Lightweight</item>
+        <item>Welterweight</item>
+        <item>Middleweight</item>
+        <item>Light Heavyweight</item>
+        <item>Heavyweight</item>
+    </string-array>
+
+    <string-array name="retirement_status_array">
+        <item>All</item>
+        <item>Active</item>
+        <item>Retired</item>
+    </string-array>
+
+    <string-array name="fighting_style_array">
+        <item>All</item>
+        <item>Wrestler</item>
+        <item>Kickboxer</item>
+        <item>Grappler</item>
+        <item>MMA</item>
+    </string-array>
 </resources>

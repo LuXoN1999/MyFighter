@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/iv_details_fighter_image"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_details_fighter_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="NAME:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_nickname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_name_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="NICKNAME:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_nationality_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_nickname_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="NATIONALITY:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_age_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_nationality_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="AGE:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_status_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_age_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="STATUS:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_division_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_status_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+       android:text="DIVISION:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_division_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="WEIGHT:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_height_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_weight_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="HEIGHT:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_style_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_height_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="FIGHTING STYLE:"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_bmi_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_style_label"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:text="BMI:"
+        />
+
+    <Button
+        android:id="@+id/btn_weight_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_details_division_label"
+        android:layout_marginRight="15dp"
+        android:text="kg/lbs"
+        />
+
+    <Button
+        android:id="@+id/btn_height_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_weight_convert"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="cm/ft"
+        />
+
+    <Button
+        android:id="@+id/btn_details_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="25dp"
+        android:text="BACK"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_name_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_name_label"
+        android:layout_marginLeft="5dp"
+        android:text="name_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_nickname_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_nickname_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_nickname_label"
+        android:layout_marginLeft="5dp"
+        android:text="nickname_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_nationality_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_nationality_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_nationality_label"
+        android:layout_marginLeft="5dp"
+        android:text="nationality_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_age_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_age_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_age_label"
+        android:layout_marginLeft="5dp"
+        android:text="age_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_status_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_status_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_status_label"
+        android:layout_marginLeft="5dp"
+        android:text="status_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_division_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_division_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_division_label"
+        android:layout_marginLeft="5dp"
+        android:text="division_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_weight_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_weight_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_weight_label"
+        android:layout_marginLeft="5dp"
+        android:text="weight_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_height_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_height_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_height_label"
+        android:layout_marginLeft="5dp"
+        android:text="height_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_style_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_style_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_style_label"
+        android:layout_marginLeft="5dp"
+        android:text="style_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_bmi_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_bmi_label"
+        app:layout_constraintBottom_toBottomOf="@id/tv_details_bmi_label"
+        android:layout_marginLeft="5dp"
+        android:text="bmi_value"
+        />
+
+    <TextView
+        android:id="@+id/tv_details_bmi_message_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/tv_details_bmi_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_details_bmi_value"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="bmi_value_message"
+        />
+
+    <Button
+        android:id="@+id/btn_delete_fighter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/btn_details_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_details_back"
+        android:layout_marginLeft="20dp"
+        android:text="DELETE"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

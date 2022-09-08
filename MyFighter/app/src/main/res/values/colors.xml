@@ -7,4 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bmi_blue">#4287F5</color>
+    <color name="bmi_green">#21F205</color>
+    <color name="bmi_red">#B50D0D</color>
+    <color name="bmi_orange">#F27C05</color>
+    <color name="bmi_yellow">#DEE609</color>
 </resources>

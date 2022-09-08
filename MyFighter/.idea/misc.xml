@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.165" />
+        <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/drawable/corners.xml" value="0.165" />
+        <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/drawable/ic_launcher_background.xml" value="0.165" />
         <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/layout/fragment_fighter_details.xml" value="0.264" />
+        <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/layout/fragment_fighter_list.xml" value="0.20072992700729927" />
+        <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/layout/fragment_new_fighter.xml" value="0.264" />
+        <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/layout/fragment_spinners.xml" value="0.24682971014492755" />
+        <entry key="..\:/RMA-Projekt/MyFighter/app/src/main/res/layout/item_fighter.xml" value="0.264" />
       </map>
     </option>
   </component>

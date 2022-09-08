@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="@string/str_name"
+        />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="Enter name"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="@string/str_nickname"
+        />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_nickname"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:hint="Enter nickname"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_nationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_nickname"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="@string/str_nationality"
+        />
+
+    <EditText
+        android:id="@+id/et_nationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_nationality"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:hint="Enter nationality"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_nationality"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="@string/str_age"
+        />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_age"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:hint="Enter age"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_image_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_age"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="IMAGE URL"
+        />
+
+    <EditText
+        android:id="@+id/et_image_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_image_url"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:inputType="textUri"
+        android:importantForAutofill="no"
+        android:hint="Enter image URL"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_image_url"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="@string/str_status"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_status"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp">
+        <RadioButton android:id="@+id/rb_status_active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/str_status_active" />
+
+        <RadioButton
+            android:id="@+id/rb_status_retired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/str_status_retired" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rg_status"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:textSize="15sp"
+        android:text="@string/str_weight"
+        />
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rg_status"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="150dp"
+        android:textSize="15sp"
+        android:text="@string/str_height"
+        />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/tv_weight"
+        app:layout_constraintLeft_toLeftOf="@id/tv_weight"
+        app:layout_constraintTop_toBottomOf="@id/tv_weight"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no"
+        android:hint="Enter weight"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="wrap_content"
+        app:layout_constraintRight_toRightOf="@id/tv_height"
+        app:layout_constraintLeft_toLeftOf="@id/tv_height"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_height"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no"
+        android:hint="Enter height"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_fighting_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_weight"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:text="@string/str_style"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/rg_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fighting_style"
+        android:layout_margin="10dp">
+        <RadioButton
+            android:id="@+id/rb_style_mma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_style_mma"/>
+        <RadioButton
+            android:id="@+id/rb_style_kickboxing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_style_kickboxer" />
+        <RadioButton
+            android:id="@+id/rb_style_wrestler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_style_wrestler"/>
+        <RadioButton
+            android:id="@+id/rb_style_grappler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_style_grappler"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_save_fighter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rg_style"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="20dp"
+        android:text="@string/str_create_fighter"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
