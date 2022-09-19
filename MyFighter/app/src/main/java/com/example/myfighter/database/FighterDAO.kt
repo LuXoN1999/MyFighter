@@ -18,7 +18,7 @@ interface FighterDAO {
     @Query("SELECT * FROM fighters WHERE Style = :fightingStyle")
     fun getFightersByFightingStyle(fightingStyle: String): LiveData<List<Fighter>>
 
-    @Query("SELECT * FROM fighters WHERE Status = :isRetired")
+    @Query("SELECT * FROM fighters WHERE Retired = :isRetired")
     fun getFightersByRetirementStatus(isRetired: Boolean): LiveData<List<Fighter>>
 
     @Query("SELECT * FROM fighters WHERE Division = :division")

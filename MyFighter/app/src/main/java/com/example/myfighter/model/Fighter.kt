@@ -11,7 +11,7 @@ data class Fighter(
     @ColumnInfo(name="Nickname") val nickname: String?,
     @ColumnInfo(name="Nationality") val nationality: String,
     @ColumnInfo(name="Age") var age: Int,
-    @ColumnInfo(name="Status") var isRetired: Boolean,
+    @ColumnInfo(name="Retired") var isRetired: Boolean,
     @ColumnInfo(name="Weight") var weightKg: Double,
     @ColumnInfo(name="Division") var division: String,
     @ColumnInfo(name="Height") var heightCm: Double,

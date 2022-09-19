@@ -144,7 +144,7 @@
 
     <EditText
         android:id="@+id/et_image_url"
-        android:layout_width="wrap_content"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tv_image_url"
         app:layout_constraintRight_toRightOf="parent"

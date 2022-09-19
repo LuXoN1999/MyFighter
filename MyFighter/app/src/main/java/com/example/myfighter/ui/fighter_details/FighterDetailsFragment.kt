@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -38,6 +39,8 @@ class FighterDetailsFragment:Fragment() {
             fighter?.let { it ->
                 viewModel.delete(it)
             }
+            var toast = Toast.makeText(this.context,"FIGHTER SUCCESSFULLY DELETED!",Toast.LENGTH_LONG)
+            toast.show()
             showFighterListFragment()
         }
         setupUI(fighter)
@@ -52,8 +55,8 @@ class FighterDetailsFragment:Fragment() {
             binding.tvDetailsAgeValue.text = fighter.age.toString()
             binding.tvDetailsStatusValue.text = if (fighter.isRetired) "Retired" else "Active"
             binding.tvDetailsDivisionValue.text = fighter.division
-            binding.tvDetailsWeightValue.text = fighter.weightKg.toString() + "kg"
-            binding.tvDetailsHeightValue.text = fighter.heightCm.toString() + "cm"
+            binding.tvDetailsWeightValue.text = fighter.weightKg.toString() + " kg"
+            binding.tvDetailsHeightValue.text = fighter.heightCm.toString() + " cm"
             binding.tvDetailsStyleValue.text = fighter.fightingStyle
             binding.tvDetailsBmiValue.text = calculateBMI(fighter.weightKg,fighter.heightCm).toString()
             changeBMITextAndColorDependingOnValue(calculateBMI(fighter.weightKg,fighter.heightCm))

@@ -43,7 +43,7 @@ class NewFighterFragment: Fragment() {
             if(imageURL.isNullOrEmpty()){ imageURL = "/" }
             val division = calculateDivision(weight.toDouble())
             viewModel.save(name,nickname,nationality,age.toInt(),isRetired,weight.toDouble(),division,height.toDouble(),style,imageURL)
-            message = Toast.makeText(this.context,"FIGHTER CREATION SUCCESSFUL",Toast.LENGTH_LONG)
+            message = Toast.makeText(this.context,"FIGHTER CREATION SUCCESSFUL!",Toast.LENGTH_LONG)
             message.show()
             showFighterListFragment()
         }

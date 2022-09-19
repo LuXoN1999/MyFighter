@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import com.example.myfighter.model.Fighter
 
 class FighterRepositoryImpl(val fighterDAO: FighterDAO): FighterRepository {
-    override fun save(fighter: Fighter) = fighterDAO.insertFighter(fighter)
+    override fun saveFighter(fighter: Fighter) = fighterDAO.insertFighter(fighter)
     override fun delete(fighter: Fighter) = fighterDAO.delete(fighter)
     override fun getFighterByName(name: String): Fighter = fighterDAO.getFighterByName(name)
     override fun getAllFighters(): LiveData<List<Fighter>> = fighterDAO.getAllFighters()

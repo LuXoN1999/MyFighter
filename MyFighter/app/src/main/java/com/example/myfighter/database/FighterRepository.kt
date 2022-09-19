@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import com.example.myfighter.model.Fighter
 
 interface FighterRepository {
-    fun save(fighter: Fighter)
+    fun saveFighter(fighter: Fighter)
     fun delete(fighter: Fighter)
     fun getFighterByName(name: String): Fighter
     fun getAllFighters(): LiveData<List<Fighter>>

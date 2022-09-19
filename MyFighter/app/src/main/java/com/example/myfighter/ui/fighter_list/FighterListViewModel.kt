@@ -1,7 +1,6 @@
 package com.example.myfighter.ui.fighter_list
 
 import androidx.lifecycle.ViewModel
-import com.example.myfighter.model.Fighter
 import com.example.myfighter.additional_functions.stringIsADivision
 import com.example.myfighter.additional_functions.stringIsAFightingStyle
 import com.example.myfighter.database.FighterRepository
@@ -34,7 +33,4 @@ class FighterListViewModel(private val fighterRepository: FighterRepository) : V
         }
     }
 
-    fun delete(fighter: Fighter) {
-        fighterRepository.delete(fighter)
-    }
 }
