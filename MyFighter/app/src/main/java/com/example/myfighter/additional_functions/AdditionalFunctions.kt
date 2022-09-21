@@ -1,8 +1,11 @@
 package com.example.myfighter.additional_functions
 
 import android.graphics.Color
+import android.view.View
 import android.webkit.URLUtil
 import android.widget.RadioGroup
+import android.widget.TextView
+import com.example.myfighter.model.Fighter
 import java.math.RoundingMode
 import java.text.DecimalFormat
 import java.util.*
@@ -153,3 +156,11 @@ fun createDecimalFormatInstance(): DecimalFormat{
     return df
 }
 
+fun checkListAndSetNoFighterTextVisibility(fighterList: List<Fighter>,noFightersText: TextView){
+    if(fighterList.isNotEmpty()){
+        noFightersText.visibility = View.INVISIBLE
+    }
+    else{
+        noFightersText.visibility = View.VISIBLE
+    }
+}

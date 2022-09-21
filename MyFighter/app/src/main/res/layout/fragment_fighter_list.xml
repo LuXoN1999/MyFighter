@@ -106,4 +106,16 @@
         app:fabSize="normal"
         />
 
+    <TextView
+        android:id="@+id/tv_no_fighters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/rv_fighters"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:text="@string/no_fighters_found"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

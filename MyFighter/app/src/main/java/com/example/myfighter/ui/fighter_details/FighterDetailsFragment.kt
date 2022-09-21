@@ -50,7 +50,10 @@ class FighterDetailsFragment:Fragment() {
         if (fighter != null) {
             Picasso.with(this.context).load(fighter.imageURL).into(binding.ivDetailsFighterImage)
             binding.tvDetailsNameValue.text = fighter.name
-            binding.tvDetailsNicknameValue.text = fighter.nickname
+
+            if(fighter.nickname.isNullOrEmpty()) binding.tvDetailsNicknameValue.text = "-"
+            else binding.tvDetailsNicknameValue.text=fighter.nickname.toString()
+
             binding.tvDetailsNationalityValue.text = fighter.nationality
             binding.tvDetailsAgeValue.text = fighter.age.toString()
             binding.tvDetailsStatusValue.text = if (fighter.isRetired) "Retired" else "Active"

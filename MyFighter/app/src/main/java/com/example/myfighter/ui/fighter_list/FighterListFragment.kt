@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myfighter.R
+import com.example.myfighter.additional_functions.checkListAndSetNoFighterTextVisibility
 import com.example.myfighter.databinding.FragmentFighterListBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -119,6 +120,7 @@ class FighterListFragment: Fragment(), OnFighterEventListener{
     private fun observeFighters(){
         viewModel.fighters.observe(viewLifecycleOwner) {
             if (it != null) {
+                checkListAndSetNoFighterTextVisibility(it,binding.tvNoFighters)
                 adapter.setFighters(it)
             }
         }

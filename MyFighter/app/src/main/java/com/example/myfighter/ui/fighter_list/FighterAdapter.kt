@@ -1,6 +1,5 @@
 package com.example.myfighter.ui.fighter_list
 
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -31,6 +30,4 @@ class FighterAdapter: RecyclerView.Adapter<FighterViewHolder>() {
     }
 
     override fun getItemCount(): Int = fighters.count()
-
-
 }

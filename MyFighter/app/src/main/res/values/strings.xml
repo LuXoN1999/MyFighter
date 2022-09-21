@@ -17,6 +17,7 @@
     <string name="str_style_grappler">Grappler</string>
     <string name="str_create_fighter">Create Fighter</string>
     <string name="str_bmi">BMI</string>
+    <string name="no_fighters_found">No Fighters Found</string>
     <string-array name="division_array">
         <item>All</item>
         <item>Flyweight</item>
